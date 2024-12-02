@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Programs list</title>
+    <title>Programming languages </title>
 </head>
 <body>
     <h1>Post List</h1>
@@ -11,6 +11,6 @@
     {% empty %}
         <h3>Program languages isn't added</h3>
     {% endfor %}
-    <a href="{% url 'programs:language_create' %}">Create language</a>
+    <a href="{% url 'programs:language_create' %}">Add New language</a>
 </body>
 </html>
