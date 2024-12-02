@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add programing language</title>
+</head>
+<body>
+    <form method="post">
+          {% csrf_token %}
+          <label for="language_name">Language Name</label><br>
+          <input type="text" id="language_name" name="language_name"><br>
+          <label for="description">Description</label><br>
+          <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+      <input type="submit" value="Add language">
+      <a href="{% url 'programs:language_list' %}">Back to List</a>
+    </form>
+
+</body>
+</html>

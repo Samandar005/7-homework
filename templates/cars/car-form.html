@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Cars</title>
+</head>
+<body>
+     <form method="post">
+          {% csrf_token %}
+          <label for="car_name">Car name</label><br>
+          <input type="text" id="car_name" name="car_name"><br>
+
+          <label for="model">Model</label><br>
+          <input type="text" id="model" name="model"><br>
+
+          <label for="year">Year</label><br>
+          <input type="number" id="year" name="year"><br>
+
+      <input type="submit" value="Add language">
+      <a href="{% url 'cars:car_list' %}">Back to List</a>
+    </form>
+
+</body>
+</html>
